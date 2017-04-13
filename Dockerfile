@@ -5,7 +5,7 @@ ENV FLUME_VERSION=1.6.0 \
   FLUME_CONF_DIR=/conf \
   FLUME_AGENT_NAME=test \
   MAVEN_VERSION=3.5.0 \
-  LOG4J_PROPERTIES=/opt/flume/log4j.properties
+  LOG4J_PROPERTIES=/opt/flume/log4j.properties \
   PATH=${PATH}:/opt/flume/bin
 
 RUN apt-get update && apt-get install --no-install-recommends --no-install-suggests  -y \
