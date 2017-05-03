@@ -9,7 +9,7 @@ fi
 if [ $FLUME_CONF_URL ];
 then
         FLUME_REMOTE_CONF="/flume_remote.conf"
-        wget -qO ${FLUME_CONF_URL} ${FLUME_REMOTE_CONF}
+        wget -qO ${FLUME_REMOTE_CONF} ${FLUME_CONF_URL}
         OPTS="${OPTS} -f ${FLUME_REMOTE_CONF}"
 else
         OPTS="${OPTS} -f ${$FLUME_CONF}"
