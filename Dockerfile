@@ -1,7 +1,7 @@
 FROM java:openjdk-8-jdk
 MAINTAINER Maksim Podlesnyi <mpodlesnyi@smartling.com>
 
-ENV FLUME_VERSION=1.6.0 \
+ENV FLUME_VERSION=1.7.0 \
   FLUME_CONF_DIR=/conf \
   FLUME_AGENT_NAME=test \
   MAVEN_VERSION=3.5.0 \
