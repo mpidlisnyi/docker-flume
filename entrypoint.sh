@@ -18,4 +18,4 @@ else
         OPTS="${OPTS} -f ${FLUME_CONF}"
 fi
 
-exec flume-ng agent -c ${FLUME_CONF_DIR} -n ${FLUME_AGENT_NAME} ${FLUME_CONF} ${OPTS} ${@}
+exec flume-ng agent -c ${FLUME_CONF_DIR} -n ${FLUME_AGENT_NAME} ${OPTS} ${@}
