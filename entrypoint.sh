@@ -18,4 +18,6 @@ else
         OPTS="${OPTS} -f ${FLUME_CONF}"
 fi
 
+find /tmp/hadoop-root/s3a/ -type f -name "output-*.tmp" -delete
+
 exec flume-ng agent -c ${FLUME_CONF_DIR} -n ${FLUME_AGENT_NAME} ${OPTS} ${@}
